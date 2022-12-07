@@ -44,9 +44,9 @@ public class Book {
     public Book() {
 	}
 	
-    public Book(String title, String description, String language,Integer numberOfPages) {
+    public Book(String title, String desc, String language,Integer numberOfPages) {
 		this.title = title;
-		this.description = description;
+		this.description = desc;
 		this.language = language;
 		this.numberOfPages = numberOfPages;
 	}
@@ -101,4 +101,5 @@ public class Book {
     protected void onUpdate(){
         this.updatedAt = new Date(); //?
     }
+    
 }
