@@ -1,14 +1,13 @@
 package com.boydlever.mvc.services;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.stereotype.Service;
-import org.yaml.snakeyaml.events.Event.ID;
 
 import com.boydlever.mvc.models.Book;
 import com.boydlever.mvc.repositories.BookRepository;
 
-import antlr.collections.List;
 
 @Service
 public class BookService {
@@ -35,8 +34,7 @@ public class BookService {
         }
     }
     // deletes a book
-    public Book deleteBook(Long id) {
-    	return bookRepository.deleteById(id);
-    }
+//    public Book deleteBook(Long id) {
+//    	return bookRepository.deleteById(id);
+//    }
 }
-//Now that the book service is set up, we also have to set up the controller
